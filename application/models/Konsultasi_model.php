@@ -29,4 +29,10 @@ class Konsultasi_model extends CI_Model
         $query = $this->db->get();
         return $query->result_array(); 
     }
+
+    public function get_konsultasi_by_id($id)
+    {
+        $query = $this->db->get_where('detail_services', array('id' => $id));
+        return $query->row_array();
+    }
 }

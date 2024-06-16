@@ -300,6 +300,12 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 	<script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+	<script src="<?php echo base_url('assets/admin/main-mini-sidebar') ?>/js/pages/dashboard4.js"></script>
+
+	<script src="<?php echo base_url('assets/admin/main-mini-sidebar') ?>/icons/feather-icons/feather.min.js"></script>	
+	<script src="<?php echo base_url('assets/admin/main-mini-sidebar') ?>/vendor_plugins/bootstrap-slider/bootstrap-slider.js"></script>
+	<script src="<?php echo base_url('assets/admin/main-mini-sidebar') ?>/vendor_components/OwlCarousel2/dist/owl.carousel.js"></script>
+	<script src="<?php echo base_url('assets/admin/main-mini-sidebar') ?>/vendor_components/flexslider/jquery.flexslider.js"></script>
   
 </body>
 
