@@ -10,4 +10,11 @@ class Agency extends CI_Controller
         $this->load->view('agency/index');
         $this->load->view('partials/landing/footer');
     }
+
+    public function support()
+    {
+        $this->load->view('partials/landing/header');
+        $this->load->view('agency/support');
+        $this->load->view('partials/landing/footer');
+    }
 }
