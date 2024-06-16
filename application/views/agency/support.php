@@ -49,9 +49,9 @@
                 <div style="display: flex; align-items: center;">
                     <div style="text-align: left;">
                         <h4 style="margin: 0;"><b>Website</b></h4>
-                        <p style="margin: 0;">www.dosenumkm.id</p>
+                        <p style="margin: 0;">www.dosenumkm.id/submit</p>
                         <br>
-                        <p><button class="btn btn-sm btn-light">Chat dengan kami</button></p>
+                        <p><a href="<?= site_url('agency/submit') ?>" class="btn btn-sm btn-light">Chat dengan kami</a></p>
                     </div>
                     <div style="margin-left: auto;">
                         <i class="fa-solid fa-globe fa-3x" style="color: #007bff;"></i>

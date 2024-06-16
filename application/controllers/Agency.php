@@ -17,4 +17,11 @@ class Agency extends CI_Controller
         $this->load->view('agency/support');
         $this->load->view('partials/landing/footer');
     }
+
+    public function submit()
+    {
+        $this->load->view('partials/landing/header');
+        $this->load->view('agency/submit');
+        $this->load->view('partials/landing/footer');
+    }
 }
