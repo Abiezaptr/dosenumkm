@@ -225,7 +225,10 @@
         <br><br><br><br>
         <div class="row mt-4">
             <div class="col-lg-12">
-                <h4>Kategori Terkait</h4>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4>Kategori Terkait</h4>
+                    <a href="<?= site_url('edukasi/courses') ?>" class="btn btn-light btn-sm">Selengkapnya</a>
+                </div>
                 <p>Layanan kategori yang terkait dengan jasa pembuatan website terbaik dan profesional.</p>
                 <br>
                 <div class="row justify-content-center">
