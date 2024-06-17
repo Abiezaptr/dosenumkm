@@ -10,111 +10,105 @@
         <div class="footer-widgets-wrapper pb-0 pt-0">
             <div class="footer-style-2">
                 <div class="row">
-                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-xl-3 col-lg-3 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s">
                         <div class="single-footer-widget">
                             <div class="widget-head">
-                                <a href="index.html">
-                                    <img src="<?= base_url('assets') ?>/img/logo.png" width="140" alt="logo-img">
-                                </a>
-                            </div>
-                            <div class="footer-content">
-                                <p>
-                                    Aplikasi konsultasi dan agency kami menawarkan kemudahan akses dan efisiensi tinggi dalam layanan konsultasi, dengan dukungan fitur yang mempermudah interaksi antara klien dan konsultan.
-                                </p>
-                                <div class="social-icon d-flex align-items-center">
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="single-footer-widget">
-                            <div class="widget-head">
-                                <h3>Quick Links</h3>
+                                <h6 class="text-white">Kategori</h6>
                             </div>
                             <ul class="list-area">
                                 <li>
-                                    <a href="about.html">
-                                        <i class="fa-solid fa-chevron-right"></i>
-                                        About Us
+                                    <a href="">
+                                        Finansial
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="service.html">
-                                        <i class="fa-solid fa-chevron-right"></i>
-                                        Our Services
+                                    <a href="">
+                                        Marketing
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="news.html">
-                                        <i class="fa-solid fa-chevron-right"></i>
-                                        Our Blogs
+                                    <a href="">
+                                        Business Development
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="faq.html">
-                                        <i class="fa-solid fa-chevron-right"></i>
-                                        FAQ’S
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">
-                                        <i class="fa-solid fa-chevron-right"></i>
-                                        Contact Us
+                                    <a href="">
+                                        Web Development
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 ps-lg-4 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="single-footer-widget style-margin">
-                            <div class="widget-head">
-                                <h3>Contact Info</h3>
-                            </div>
-                            <div class="footer-content">
-                                <p>Sleman, Yogyakarta</p>
-                                <div class="contact-info-area-2">
-                                    <div class="contact-info-item-2">
-                                        <div class="icon">
-                                            <i class="fa-regular fa-clock"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h6>Opening Hours: </h6>
-                                            <p> Mon - Sat: 10.00 AM - 4.00 PM</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="contact-info-area-2">
-                                    <div class="contact-info-item-2">
-                                        <div class="icon">
-                                            <i class="fas fa-phone-alt"></i>
-                                        </div>
-                                        <div class="content">
-                                            <h6>Phone Call: </h6>
-                                            <a href="#">208-6666-0112, 308-5555-0113</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="col-xl-3 col-lg-3 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s">
                         <div class="single-footer-widget">
                             <div class="widget-head">
-                                <h3>Download App</h3>
+                                <h6 class="text-white">Penggunaan</h6>
                             </div>
-                            <div class="footer-content">
-                                <p>
-                                    Nikmati kemudahan konsultasi dengan aplikasi yang dirancang untuk memberikan solusi cepat dan tepat. Mulailah sekarang untuk pengalaman interaksi yang optimal.
-                                </p>
-                                <div class="apps-image d-flex align-items-center">
-                                    <a href="#"><img src="<?= base_url('assets') ?>/img/play-store.png" alt="store-img"></a>
-                                    <a href="#"><img src="<?= base_url('assets') ?>/img/app-store.png" alt="store-img"></a>
-                                </div>
+                            <ul class="list-area">
+                                <li>
+                                    <a href="">
+                                        Daftar sebagai Konsultan
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Tawarkan Pekerjaan
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Blog Informasi
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        FAQ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <h6 class="text-white">Tentang Dosenumkm</h6>
                             </div>
+                            <ul class="list-area">
+                                <li>
+                                    <a href="">
+                                        Bekerja dengan Dosenumkm
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Syarat dan Ketentuan
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Kebijakan Privasi
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 ps-lg-5 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <h6 class="text-white">Hubungi Kami</h6>
+                            </div>
+                            <ul class="list-area">
+                                <li>
+                                    <a href="">
+                                        <i class="fa-solid fa-envelope"></i>&nbsp; support@dosenumkm.id
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-whatsapp"></i>&nbsp; +62 812-5671-1985
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -122,28 +116,7 @@
         </div>
     </div>
     <div class="footer-bottom style-2 style-4">
-        <div class="container">
-            <div class="footer-wrapper d-flex align-items-center justify-content-between">
-                <p class="wow fadeInLeft color-2" data-wow-delay=".3s">
-                    © All Copyright 2024 by <a href="index.html">Dosen UMKM</a>
-                </p>
-                <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
-                    <li>
-                        <a href="contact.html">
-                            Terms & Condition
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html">
-                            Privacy Policy
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <a href="#" id="scrollUp" class="scroll-icon">
-            <i class="far fa-arrow-up"></i>
-        </a>
+
     </div>
 </footer>
 
