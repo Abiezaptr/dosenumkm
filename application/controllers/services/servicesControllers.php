@@ -126,13 +126,60 @@ class servicesControllers extends CI_Controller {
 
     public function detail($id) {
         $data['title'] = 'Dosen UMKM | Detail Services';
+
         $data['service'] = $this->service_model->get_service_by_id($id);
         $data['services'] = $this->service_model->get_services_by_service_id($id);
+        $data['categories'] = $this->service_model->get_categories();
+        $data['types'] = $this->service_model->get_type();
+        $data['specialist'] = $this->service_model->get_specialist();
         
         $this->load->view('partials/admin/header', $data);
         $this->load->view('admin/services/detail', $data);
         $this->load->view('partials/admin/footer');
-    }      
+    }
+
+    public function detailProcess() {
+        $config['upload_path'] = './assets/uploads/';
+        $config['allowed_types'] = 'jpg|jpeg|png|gif';
+        $config['max_size'] = 2048; 
+        $config['encrypt_name'] = TRUE; 
+        
+        $this->load->library('upload', $config);
+        $this->db->trans_start(); 
+    
+        try {
+            if ($this->upload->do_upload('image')) {
+                $upload_data = $this->upload->data();
+                $image_path = 'assets/uploads/' . $upload_data['file_name'];
+    
+                $service_data = array(
+                    'services_id' => $this->input->post('services_id'),
+                    'title' => $this->input->post('title'),
+                    'price' => $this->input->post('price'),
+                    'status' => $this->input->post('status'),
+                    'type_id' => $this->input->post('type_id'),
+                    'specialist_id' => $this->input->post('specialist_id'),
+                    'image' => $image_path
+                );
+    
+                $this->service_model->set_detail_service($service_data);
+                
+                if ($this->db->trans_status() === FALSE) {
+                    throw new Exception('There was an error saving the service details.');
+                }
+    
+                $this->db->trans_commit(); 
+                $this->session->set_flashdata('success', 'Service and details saved successfully.');
+                redirect('services/servicesControllers/detail/' . $this->input->post('services_id'));
+            } else {
+                throw new Exception($this->upload->display_errors());
+            }
+        } catch (Exception $e) {
+            $this->db->trans_rollback(); 
+            $this->session->set_flashdata('error', $e->getMessage());
+            redirect('services/servicesControllers/detail/' . $this->input->post('services_id'));
+        }
+    }  
 
     public function delete($id) {
         $this->service_model->delete_service($id);

@@ -205,11 +205,14 @@
                                                             <h6 class="mb-3">Ulasan dari pembeli (1)</h6>
                                                             <h2 class="text-primary mb-3 fw-semibold fs-9">4/5</h2>
                                                             <ul class="list-unstyled d-flex align-items-center justify-content-center mb-0">
-                                                                <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning fs-6"></i></a></li>
-                                                                <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning fs-6"></i></a></li>
-                                                                <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning fs-6"></i></a></li>
-                                                                <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning fs-6"></i></a></li>
-                                                                <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning fs-6"></i></a></li>
+                                                                <li class="fs-6">
+                                                                    <?php
+                                                                        $rating = $detail['rating'];
+                                                                        for ($i = 0; $i < $rating; $i++) {
+                                                                            echo '<i class="ti ti-star text-warning"></i>&nbsp;';
+                                                                        }
+                                                                    ?>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                     </div>

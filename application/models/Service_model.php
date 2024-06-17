@@ -33,6 +33,11 @@ class Service_model extends CI_Model {
         return $query->result_array();
     }
 
+    public function get_all_type() {
+        $query = $this->db->get('jasa_type');
+        return $query->result_array();
+    }
+
     public function get_categories() {
         $query = $this->db->get('categories');
         return $query->result_array();

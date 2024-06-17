@@ -58,7 +58,7 @@
                                                 <select name="services_id" id="select" required class="form-control">
                                                     <?php foreach ($services as $service): ?>
                                                         <option value="<?php echo $service['id']; ?>"><?php echo $service['title']; ?></option>
-                                                    <?php endforeach; ?>
+                                                    <?php endforeach; ?> 
                                                 </select>
                                             </div>
                                         </div>
@@ -77,38 +77,39 @@
                                         <div class="form-group">
                                           <label>Status</label>
                                           <fieldset class="controls">
-                                              <input name="detail_status" type="radio" id="radio_1" value="1" required>
+                                              <input name="status" type="radio" id="radio_1" value="1" required>
                                               <label for="radio_1">Aktif</label>
                                           </fieldset>
                                           <fieldset>
-                                              <input name="detail_status" type="radio" id="radio_2" value="0"> 
+                                              <input name="status" type="radio" id="radio_2" value="0"> 
                                               <label for="radio_2">Tidak Aktif</label>                                 
                                           </fieldset>
                                         </div>
                                         <div class="form-group">
-                                        <label>Tipe Jasa</label>
+                                            <label>Tipe Jasa</label>
                                             <div class="controls">
-                                                <select name="services_id" id="select" required class="form-control">
-                                                    <?php foreach ($jasaTypes as $jasa): ?>
-                                                        <option value="<?php echo $jasa['id']; ?>"><?php echo $jasa['title']; ?></option>
-                                                    <?php endforeach; ?>
+                                                <select name="type_id" id="select" required class="form-control">
+                                                <?php foreach ($types as $type): ?>
+                                                    <option value="<?php echo $type['id']; ?>"><?php echo $type['name']; ?></option>
+                                                <?php endforeach; ?>
                                                 </select>
                                             </div>
                                         </div>
+
                                         <div class="form-group">
                                         <label>Tipe Spesialis</label>
                                             <div class="controls">
-                                                <select name="services_id" id="select" required class="form-control">
-                                                    <?php foreach ($specialistTypes as $specialist): ?>
-                                                        <option value="<?php echo $specialist['id']; ?>"><?php echo $specialist['title']; ?></option>
-                                                    <?php endforeach; ?>
+                                                <select name="specialist_id" id="select" required class="form-control">
+                                                <?php foreach ($specialist as $specialis): ?>
+                                                    <option value="<?php echo $specialis['id']; ?>"><?php echo $specialis['name']; ?></option>
+                                                <?php endforeach; ?>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                         <label>Image</label>
                                             <div class="controls">
-                                                <input type="file" name="images" class="form-control" required> 
+                                                <input type="file" name="image" class="form-control" required> 
                                             </div>
                                         </div>
                                         <div class="text-xs-right">
