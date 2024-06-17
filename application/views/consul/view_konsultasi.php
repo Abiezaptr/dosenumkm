@@ -203,7 +203,7 @@
                                                     <div class="card shadow-none border w-100 mb-7 mb-lg-0">
                                                         <div class="card-body text-center p-4 d-flex flex-column justify-content-center">
                                                             <h6 class="mb-3">Ulasan dari pembeli (1)</h6>
-                                                            <h2 class="text-primary mb-3 fw-semibold fs-9">4/5</h2>
+                                                            <h2 class="text-primary mb-3 fw-semibold fs-9"><?= number_format($detail['rating'], 0) ?>/5</h2>
                                                             <ul class="list-unstyled d-flex align-items-center justify-content-center mb-0">
                                                                 <li class="fs-6">
                                                                     <?php

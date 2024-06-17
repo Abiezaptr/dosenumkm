@@ -17,7 +17,7 @@ class servicesControllers extends CI_Controller {
         $this->load->view('partials/admin/footer');
     }
 
-     public function create() {
+    public function create() {
         $data['title'] = 'Dosen UMKM | Create Services';
         $data['categories'] = $this->service_model->get_categories();
         $data['types'] = $this->service_model->get_type();
@@ -92,37 +92,46 @@ class servicesControllers extends CI_Controller {
             $this->session->set_flashdata('error', $e->getMessage());
             redirect('services/servicesControllers/create');
         }
-    }          
+    }       
     
     public function edit($id) {
-        $data['service'] = $this->service_model->get_services($id);
-        $data['categories'] = $this->category_model->get_categories();
+        $data['title'] = 'Dosen UMKM | Edit Services';
+        $data['categories'] = $this->service_model->get_categories();
+        $data['types'] = $this->service_model->get_type();
+        $data['specialist'] = $this->service_model->get_specialist();
+        $data['service'] = $this->service_model->get_service_by_id($id); 
+        
+        $this->load->view('partials/admin/header', $data);
+        $this->load->view('admin/services/update', $data);
+        $this->load->view('partials/admin/footer');
+    }    
+    
+    public function update($id) {
+        $config['upload_path'] = './assets/uploads/';
+        $config['allowed_types'] = 'jpg|jpeg|png|gif';
+        $config['max_size'] = 2048;
+        $config['encrypt_name'] = TRUE;
+    
+        $this->load->library('upload', $config);
 
-        if (empty($data['service'])) {
-            show_404();
+        $data = array(
+            'category_id' => $this->input->post('category_id'),
+            'title' => $this->input->post('title'),
+            'description' => $this->input->post('description'),
+            'status' => $this->input->post('status'),
+            'rating' => $this->input->post('rating')
+        );
+    
+        // check image if exist
+        if ($this->upload->do_upload('images')) {
+            $upload_data = $this->upload->data();
+            $data['image'] = 'assets/uploads/' . $upload_data['file_name'];
         }
-
-        $this->form_validation->set_rules('title', 'Title', 'required');
-        $this->form_validation->set_rules('description', 'Description', 'required');
-        $this->form_validation->set_rules('price', 'Price', 'required|numeric');
-
-        if ($this->form_validation->run() === FALSE) {
-            $this->load->view('templates/header');
-            $this->load->view('services/edit', $data);
-            $this->load->view('templates/footer');
-        } else {
-            $service_data = array(
-                'category_id' => $this->input->post('category_id'),
-                'title' => $this->input->post('title'),
-                'description' => $this->input->post('description'),
-                'price' => $this->input->post('price'),
-                'rating' => $this->input->post('rating'),
-                'reviews' => $this->input->post('reviews')
-            );
-            $this->service_model->update_service($id, $service_data);
-            redirect('services');
-        }
-    }
+    
+        $this->service_model->update_service($id, $data);
+        $this->session->set_flashdata('success', 'Service updated successfully.');
+        redirect('services/servicesControllers');
+    }      
 
     public function detail($id) {
         $data['title'] = 'Dosen UMKM | Detail Services';
@@ -183,6 +192,7 @@ class servicesControllers extends CI_Controller {
 
     public function delete($id) {
         $this->service_model->delete_service($id);
-        redirect('services');
+        $this->session->set_flashdata('success', 'Service deleted successfully.');
+        redirect('services/servicesControllers');
     }
 }
