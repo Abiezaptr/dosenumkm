@@ -107,6 +107,7 @@
                                                 </div>
                                             </div>
                                         </div>
+<<<<<<< HEAD
                                     </div>
                                 </div>
                             </div>
@@ -175,6 +176,60 @@
                                                         <p>Mulai dari Rp. 200.000 - Menerima perbaikan error atau bug pada sistem</p>
                                                         <hr>
                                                         <a href="<?= site_url('message') ?>" class="btn btn-primary text-white mt-3" style="float: right;"><i class="ti ti-brand-hipchat fs-4"></i>&nbsp; Chat and Nego </a>
+=======
+                                        <div class="tab-pane fade" id="pills-reviews" role="tabpanel" aria-labelledby="pills-reviews-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-4 d-flex align-items-stretch">
+                                                    <div class="card shadow-none border w-100 mb-7 mb-lg-0">
+                                                        <div class="card-body text-center p-4 d-flex flex-column justify-content-center">
+                                                            <h6 class="mb-3">Ulasan dari pembeli (1)</h6>
+                                                            <h2 class="text-primary mb-3 fw-semibold fs-9"><?= number_format($detail['rating'], 0) ?>/5</h2>
+                                                            <ul class="list-unstyled d-flex align-items-center justify-content-center mb-0">
+                                                                <li class="fs-6">
+                                                                    <?php
+                                                                        $rating = $detail['rating'];
+                                                                        for ($i = 0; $i < $rating; $i++) {
+                                                                            echo '<i class="ti ti-star text-warning"></i>&nbsp;';
+                                                                        }
+                                                                    ?>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 d-flex align-items-stretch">
+                                                    <div class="card shadow-none border w-100 mb-7 mb-lg-0">
+                                                        <div class="card-body p-4 d-flex flex-column justify-content-center">
+                                                            <div class="d-flex align-items-center gap-9 mb-3">
+                                                                <span class="flex-shrink-0 fs-2">Kecepatan membalas</span>
+                                                                <div class="progress bg-light-primary w-100" style="height: 4px;">
+                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
+                                                                </div>
+                                                                <h6 class="mb-0">(485)</h6>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap-9 mb-3">
+                                                                <span class="flex-shrink-0 fs-2">Pelayanan</span>
+                                                                <div class="progress bg-light-primary w-100" style="height: 4px;">
+                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
+                                                                </div>
+                                                                <h6 class="mb-0">(215)</h6>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap-9 mb-3">
+                                                                <span class="flex-shrink-0 fs-2">Keterampilan dan keahlian</span>
+                                                                <div class="progress bg-light-primary w-100" style="height: 4px;">
+                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
+                                                                </div>
+                                                                <h6 class="mb-0">(110)</h6>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap-9 mb-3">
+                                                                <span class="flex-shrink-0 fs-2">Value for money</span>
+                                                                <div class="progress bg-light-primary w-100" style="height: 4px;">
+                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                                                </div>
+                                                                <h6 class="mb-0">(620)</h6>
+                                                            </div>
+                                                        </div>
+>>>>>>> 71d86a3ba61d8c1c292689844406c7243e8c6f43
                                                     </div>
                                                 </div>
                                             </div>
