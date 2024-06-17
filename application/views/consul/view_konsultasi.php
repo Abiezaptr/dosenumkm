@@ -127,11 +127,6 @@
                                     </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link position-relative rounded-0 d-flex align-items-center justify-content-center bg-transparent fs-3 py-6" id="pills-reviews-tab" data-bs-toggle="pill" data-bs-target="#pills-reviews" type="button" role="tab" aria-controls="pills-reviews" aria-selected="false">
-                                        Ulasan
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
                                     <button class="nav-link position-relative rounded-0 d-flex align-items-center justify-content-center bg-transparent fs-3 py-6" id="pills-portofolio-tab" data-bs-toggle="pill" data-bs-target="#pills-portofolio" type="button" role="tab" aria-controls="pills-portofolio" aria-selected="false">
                                         Portofolio
                                     </button>
@@ -139,24 +134,34 @@
                             </ul>
                             <div class="tab-content pt-4" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab" tabindex="0">
-                                    <h5 class="fs-5 mb-7 text-primary">
-                                        <b><?= $detail['title'] ?> - <?= $detail['detail_title'] ?></b>
-                                        <br>
-                                        <span class="text-muted fs-3">
-                                            <?php
-                                            $rating = $detail['rating'];
-                                            for ($i = 0; $i < $rating; $i++) {
-                                                echo '<i class="ti ti-star text-warning"></i>&nbsp;';
-                                            }
-                                            ?>&nbsp;<?= $detail['rating'] ?>
-                                        </span>
-                                    </h5>
-                                    <p class="mb-7">
-                                        <?= $detail['description'] ?>
-                                    </p>
-                                    <p class="mb-0">
-                                        Semua pengerjaan dilakukan dari awal dapat di konsultasikan terlebih dahulu hingga deal. Sistem atau aplikasi yang ingin dibuat seperti apa sehingga harga dapat menyesuaikan sistem yang ingin dibangun semakin Cepat dan sederhana maka tentunya harga semakin Terjangkau, semua pengerjaan Bergaransi jika ada error/bug dapat dilakukan Revisi perbaikan, Bonus untuk anda mendapatkan bantuan/Support seperti upload hosting/setup VPS semua belum termasuk dalam tiap pesanan.
-                                    </p>
+                                    <div class="row">
+                                        <div class="col-lg-4 d-flex align-items-stretch">
+                                            <div class="card shadow-none border w-100 mb-7 mb-lg-0">
+                                                <div class="card-body text-center p-4 d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-3">Ulasan dari pembeli (1)</h6>
+                                                    <h2 class="text-primary mb-3 fw-semibold fs-9">4/5</h2>
+                                                    <ul class="list-unstyled d-flex align-items-center justify-content-center mb-0">
+                                                        <li class="fs-6">
+                                                            <?php
+                                                            $rating = $detail['rating'];
+                                                            for ($i = 0; $i < $rating; $i++) {
+                                                                echo '<i class="ti ti-star text-warning"></i>&nbsp;';
+                                                            }
+                                                            ?>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-8 d-flex align-items-stretch">
+                                            <div class="card shadow-none border w-100 mb-7 mb-lg-0">
+                                                <div class="card-body p-4 d-flex flex-column justify-content-center">
+                                                    <h6 class="mb-3"><b><?= $detail['title'] ?> - <?= $detail['detail_title'] ?></b></h6>
+                                                    <p class="mt-3"> <?= $detail['description'] ?></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="pills-paket" role="tabpanel" aria-labelledby="pills-paket-tab" tabindex="0">
                                     <div class="row">
@@ -191,62 +196,6 @@
                                                         <p>Mulai dari Rp. 200.000 - Menerima perbaikan error atau bug pada sistem</p>
                                                         <hr>
                                                         <a href="<?= site_url('message') ?>" class="btn btn-primary text-white mt-3" style="float: right;"><i class="ti ti-brand-hipchat fs-4"></i>&nbsp; Chat and Nego </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="pills-reviews" role="tabpanel" aria-labelledby="pills-reviews-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-4 d-flex align-items-stretch">
-                                            <div class="card shadow-none border w-100 mb-7 mb-lg-0">
-                                                <div class="card-body text-center p-4 d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-3">Ulasan dari pembeli (1)</h6>
-                                                    <h2 class="text-primary mb-3 fw-semibold fs-9">4/5</h2>
-                                                    <ul class="list-unstyled d-flex align-items-center justify-content-center mb-0">
-                                                        <li class="fs-6">
-                                                            <?php
-                                                            $rating = $detail['rating'];
-                                                            for ($i = 0; $i < $rating; $i++) {
-                                                                echo '<i class="ti ti-star text-warning"></i>&nbsp;';
-                                                            }
-                                                            ?>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-8 d-flex align-items-stretch">
-                                            <div class="card shadow-none border w-100 mb-7 mb-lg-0">
-                                                <div class="card-body p-4 d-flex flex-column justify-content-center">
-                                                    <div class="d-flex align-items-center gap-9 mb-3">
-                                                        <span class="flex-shrink-0 fs-2">Kecepatan membalas</span>
-                                                        <div class="progress bg-light-primary w-100" style="height: 4px;">
-                                                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
-                                                        </div>
-                                                        <h6 class="mb-0">(485)</h6>
-                                                    </div>
-                                                    <div class="d-flex align-items-center gap-9 mb-3">
-                                                        <span class="flex-shrink-0 fs-2">Pelayanan</span>
-                                                        <div class="progress bg-light-primary w-100" style="height: 4px;">
-                                                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%;"></div>
-                                                        </div>
-                                                        <h6 class="mb-0">(215)</h6>
-                                                    </div>
-                                                    <div class="d-flex align-items-center gap-9 mb-3">
-                                                        <span class="flex-shrink-0 fs-2">Keterampilan dan keahlian</span>
-                                                        <div class="progress bg-light-primary w-100" style="height: 4px;">
-                                                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"></div>
-                                                        </div>
-                                                        <h6 class="mb-0">(110)</h6>
-                                                    </div>
-                                                    <div class="d-flex align-items-center gap-9 mb-3">
-                                                        <span class="flex-shrink-0 fs-2">Value for money</span>
-                                                        <div class="progress bg-light-primary w-100" style="height: 4px;">
-                                                            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                                                        </div>
-                                                        <h6 class="mb-0">(620)</h6>
                                                     </div>
                                                 </div>
                                             </div>
