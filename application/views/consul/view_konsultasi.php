@@ -11,56 +11,31 @@
                 <div class="card shadow-none border">
                     <div class="card-body p-4">
                         <div class="row">
-
                             <div class="col-lg-6">
                                 <div id="sync1" class="owl-carousel owl-theme">
                                     <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s1.jpg" alt="" class="img-fluid">
+                                        <img src="<?= base_url('assets') ?>/samplecover.jpg" alt="" class="img-fluid">
                                     </div>
                                     <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s2.jpg" alt="" class="img-fluid">
+                                        <img src="<?= base_url('assets') ?>/sample1.jpg" alt="" class="img-fluid">
                                     </div>
                                     <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s3.jpg" alt="" class="img-fluid">
+                                        <img src="<?= base_url('assets') ?>/sample2.jpg" alt="" class="img-fluid">
                                     </div>
                                     <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s4.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s5.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s6.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s7.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s8.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s9.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s10.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s11.jpg" alt="" class="img-fluid">
-                                    </div>
-                                    <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s12.jpg" alt="" class="img-fluid">
+                                        <img src="<?= base_url('assets') ?>/sample3.jpg" alt="" class="img-fluid">
                                     </div>
                                 </div>
 
                                 <div id="sync2" class="owl-carousel owl-theme">
                                     <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s1.jpg" alt="" class="img-fluid">
+                                        <img src="<?= base_url('assets') ?>/sample1.jpg" alt="" class="img-fluid">
                                     </div>
                                     <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s2.jpg" alt="" class="img-fluid">
+                                        <img src="<?= base_url('assets') ?>/sample2.jpg" alt="" class="img-fluid">
                                     </div>
                                     <div class="item rounded overflow-hidden">
-                                        <img src="<?= base_url('dist') ?>/images/products/s3.jpg" alt="" class="img-fluid">
+                                        <img src="<?= base_url('assets') ?>/sample3.jpg" alt="" class="img-fluid">
                                     </div>
                                 </div>
                             </div>
@@ -87,22 +62,17 @@
                                     <div class="shop-content">
                                         <div class="card">
                                             <div class="card-body">
-                                                <!-- Tab panes -->
-                                                <div class="tab-content border mt-2">
-                                                    <div class="tab-pane active p-3" id="navpill-111" role="tabpanel">
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <p>
-                                                                    <i class="ti ti-info-octagon"></i>&nbsp; <b>Paket : <?= $detail['title'] ?></b>
-                                                                </p>
-                                                                <p>Mulai dari Rp <?= number_format($detail['detail_price']) ?> - <?= $detail['detail_title'] ?></p>
-                                                                <p><b>Rp <?= number_format($detail['detail_price']) ?></b></p>
-                                                                <hr style="border-top: 1px dashed blue;">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <p>
+                                                            <i class="ti ti-info-octagon"></i>&nbsp; <b>Paket : <?= $detail['title'] ?></b>
+                                                        </p>
+                                                        <p>Mulai dari Rp <?= number_format($detail['detail_price']) ?> - <?= $detail['detail_title'] ?></p>
+                                                        <p><b>Rp <?= number_format($detail['detail_price']) ?></b></p>
+                                                        <hr style="border-top: 1px dashed blue;">
 
-                                                                <a href="<?= site_url('konsultasi/chat') ?>" class="btn btn-primary text-white w-100 mt-3"><i class="ti ti-brand-hipchat fs-4"></i>&nbsp; Chat and Nego </a>
-                                                                <p class="text-center text-muted mt-2"><small>Anda belum akan dikenakan biaya</small></p>
-                                                            </div>
-                                                        </div>
+                                                        <a href="<?= site_url('konsultasi/chat') ?>" class="btn btn-primary text-white w-100 mt-3"><i class="ti ti-brand-hipchat fs-4"></i>&nbsp; Chat and Nego </a>
+                                                        <p class="text-center text-muted mt-2"><small>Anda belum akan dikenakan biaya</small></p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -112,151 +82,195 @@
                             </div>
 
                         </div>
-                    </div>
-                    <div class="card shadow-none border">
-                        <div class="card-body p-4">
-                            <ul class="nav nav-pills user-profile-tab border-bottom" id="pills-tab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link position-relative rounded-0 active d-flex align-items-center justify-content-center bg-transparent fs-3 py-6" id="pills-description-tab" data-bs-toggle="pill" data-bs-target="#pills-description" type="button" role="tab" aria-controls="pills-description" aria-selected="true">
-                                        Ringkasan
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link position-relative rounded-0 d-flex align-items-center justify-content-center bg-transparent fs-3 py-6" id="pills-paket-tab" data-bs-toggle="pill" data-bs-target="#pills-paket" type="button" role="tab" aria-controls="pills-paket" aria-selected="false">
-                                        Paket
-                                    </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link position-relative rounded-0 d-flex align-items-center justify-content-center bg-transparent fs-3 py-6" id="pills-portofolio-tab" data-bs-toggle="pill" data-bs-target="#pills-portofolio" type="button" role="tab" aria-controls="pills-portofolio" aria-selected="false">
-                                        Portofolio
-                                    </button>
-                                </li>
-                            </ul>
-                            <div class="tab-content pt-4" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-4 d-flex align-items-stretch">
-                                            <div class="card shadow-none border w-100 mb-7 mb-lg-0">
-                                                <div class="card-body text-center p-4 d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-3">Ulasan dari pembeli (1)</h6>
-                                                    <h2 class="text-primary mb-3 fw-semibold fs-9">4/5</h2>
-                                                    <ul class="list-unstyled d-flex align-items-center justify-content-center mb-0">
-                                                        <li class="fs-6">
-                                                            <?php
-                                                            $rating = $detail['rating'];
-                                                            for ($i = 0; $i < $rating; $i++) {
-                                                                echo '<i class="ti ti-star text-warning"></i>&nbsp;';
-                                                            }
-                                                            ?>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+
+
+
+                        <ul class="nav nav-pills user-profile-tab border-bottom" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link position-relative rounded-0 active d-flex align-items-center justify-content-center bg-transparent fs-3 py-6" id="pills-description-tab" data-bs-toggle="pill" data-bs-target="#pills-description" type="button" role="tab" aria-controls="pills-description" aria-selected="true">
+                                    <b>Ringkasan</b>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link position-relative rounded-0 d-flex align-items-center justify-content-center bg-transparent fs-3 py-6" id="pills-paket-tab" data-bs-toggle="pill" data-bs-target="#pills-paket" type="button" role="tab" aria-controls="pills-paket" aria-selected="false">
+                                    <b>Paket</b>
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link position-relative rounded-0 d-flex align-items-center justify-content-center bg-transparent fs-3 py-6" id="pills-ulasan-tab" data-bs-toggle="pill" data-bs-target="#pills-ulasan" type="button" role="tab" aria-controls="pills-ulasan" aria-selected="false">
+                                    <b>Ulasan</b>
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-4" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 d-flex align-items-stretch">
+                                        <div class="card shadow-none border w-100 mb-7 mb-lg-0">
+                                            <div class="card-body text-center p-4 d-flex flex-column justify-content-center">
+                                                <h6 class="mb-3">Ulasan dari pembeli (1)</h6>
+                                                <h2 class="text-primary mb-3 fw-semibold fs-9">4/5</h2>
+                                                <ul class="list-unstyled d-flex align-items-center justify-content-center mb-0">
+                                                    <li class="fs-6">
+                                                        <?php
+                                                        $rating = $detail['rating'];
+                                                        for ($i = 0; $i < $rating; $i++) {
+                                                            echo '<i class="ti ti-star text-warning"></i>&nbsp;';
+                                                        }
+                                                        ?>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div class="col-lg-8 d-flex align-items-stretch">
-                                            <div class="card shadow-none border w-100 mb-7 mb-lg-0">
-                                                <div class="card-body p-4 d-flex flex-column justify-content-center">
-                                                    <h5 class="mb-3 text-primary"><b><?= $detail['title'] ?> - <?= $detail['detail_title'] ?></b></h5>
-                                                    <p class="mt-3"> <?= $detail['description'] ?></p>
-                                                </div>
+                                    </div>
+                                    <div class="col-lg-8 d-flex align-items-stretch">
+                                        <div class="card shadow-none border w-100 mb-7 mb-lg-0">
+                                            <div class="card-body p-4 d-flex flex-column justify-content-center">
+                                                <h5 class="mb-3 text-primary"><b><?= $detail['title'] ?> - <?= $detail['detail_title'] ?></b></h5>
+                                                <p class="mt-3"> <?= $detail['description'] ?></p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="pills-paket" role="tabpanel" aria-labelledby="pills-paket-tab" tabindex="0">
-                                    <div class="row">
-                                        <h5 class="fs-5 mt-4 mb-7 text-primary">
-                                            <b>Harga paket untuk Jasa Pembuatan Aplikasi Web - Sistem Informasi Sederhana dan Advanced</b>
-                                        </h5>
-
-                                        <div class="tab-content border mt-2">
-                                            <div class="tab-pane active p-3" id="navpill-111" role="tabpanel">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <p>
-                                                            <b class="text-primary text-uppercase">Maintenance dan Penambahan Fitur</b> <span class="text-primary fw-semibold" style="float: right;">Rp 200.000</span>
-                                                            <br><i class="ti ti-calendar-time"></i>&nbsp; <span class="fs-3"><small>Durasi pengerjaan 2 hari</small></span>
-                                                        </p>
-                                                        <p>Mulai dari Rp. 200.000 - Menerima perbaikan error atau bug pada sistem</p>
-                                                        <hr>
-                                                        <a href="<?= site_url('message') ?>" class="btn btn-primary text-white mt-3" style="float: right;"><i class="ti ti-brand-hipchat fs-4"></i>&nbsp; Chat and Nego </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="tab-content border mt-4">
-                                            <div class="tab-pane active p-3" id="navpill-111" role="tabpanel">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <p>
-                                                            <b class="text-primary text-uppercase">Pembuatan web sederhana</b> <span class="text-primary fw-semibold" style="float: right;">Rp 200.000</span>
-                                                            <br><i class="ti ti-calendar-time"></i>&nbsp; <span class="fs-3"><small>Durasi pengerjaan 7 hari</small></span>
-                                                        </p>
-                                                        <p>Mulai dari Rp. 200.000 - Menerima perbaikan error atau bug pada sistem</p>
-                                                        <hr>
-                                                        <a href="<?= site_url('message') ?>" class="btn btn-primary text-white mt-3" style="float: right;"><i class="ti ti-brand-hipchat fs-4"></i>&nbsp; Chat and Nego </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="tab-pane fade" id="pills-portofolio" role="tabpanel" aria-labelledby="pills-portofolio-tab" tabindex="0">
-                                    <div class="row">
-                                        <div class="col-lg-12">
+                            </div>
+                            <div class="tab-pane fade" id="pills-paket" role="tabpanel" aria-labelledby="pills-paket-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="tab-content border mt-2">
+                                        <div class="tab-pane active p-3" id="navpill-111" role="tabpanel">
                                             <div class="row">
-                                                <div class="col-sm-6 col-xl-3">
-                                                    <div class="card hover-img overflow-hidden rounded-2 h-100 d-flex flex-column" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-                                                        <div class="position-relative" style="flex-grow: 1; height: 200px;">
-                                                            <a href="javascript:void(0)"><img src="<?= base_url('assets') ?>/porto.png" class="card-img-top rounded-0" alt="..." style="width: 100%; height: 100%; object-fit: cover;"></a>
+                                                <div class="col-md-12">
+                                                    <p>
+                                                        <b class="text-primary">Maintenance dan Penambahan Fitur</b> <span class="text-primary fw-semibold" style="float: right;">Rp 200.000</span>
+                                                        <br><i class="ti ti-calendar-time"></i>&nbsp; <span>Durasi pengerjaan 2 hari</span>
+                                                    </p>
+                                                    <p class="text-dark">
+                                                        - Desain Landingpage Premium (Disediakan/Desain Standar)<br>
+                                                        - SEO On Page<br>
+                                                        - Security SSL (https)<br>
+                                                        - Integrasi FB Pixel (optional)<br>
+                                                        - Gratis konsultasi after sales via WhatsApp<br>
+                                                        - Gratis optimasi speed website<br>
+                                                        - Bisa revisi konten<br>
+                                                        <br>
+                                                        * Belum Termasuk Domain & Hosting
+                                                    </p>
+                                                    <hr>
+                                                    <a href="<?= site_url('message') ?>" class="btn btn-primary text-white mt-3" style="float: right;">Chat and Nego </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-ulasan" role="tabpanel" aria-labelledby="pills-ulasan-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                                            <p class="ml-3 text-dark"><b>Detail Profile Konsultan</b></p>
+                                            <hr>
+                                            <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                                                <img src="<?= base_url('assets') ?>/user.png" alt="Profile Image" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 20px;">
+                                                <div style="flex-grow: 1; min-width: 0;">
+                                                    <h5 style="margin: 0;" class="mb-2"><b>aripid</b></h5>
+                                                    <p style="word-wrap: break-word; white-space: normal;">
+                                                        Halo nama saya Arip. Saya seorang web development / web designer, yang ditawarkan untuk tujuan pemasaran. Saya telah membuat beberapa jenis website maupun toko online. saya dapat menyelesaikan pekerjaan terpanjang dalam satu minggu. website yang sering saya desain kebanyakan CMS Wordpress.
+                                                    </p>
+                                                </div>
+                                                <div style="flex-shrink: 0; margin-left: 20px;">
+                                                    <button class="btn btn-sm" style="padding: 10px 20px; border: 1px solid #007bff; background-color: #fff; color: #007bff; border-radius: 5px;">Lihat profil</button>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
+                                                <div style="text-align: center;">
+                                                    <i class="fas fa-handshake"></i>
+                                                    <p style="margin: 0; word-wrap: break-word;">Penyelesaian</p>
+                                                    <p style="margin: 0; font-weight: bold; word-wrap: break-word;"><span style="color: blue;">100%</span></p>
+                                                </div>
+                                                <div style="text-align: center;">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                    <p style="margin: 0; word-wrap: break-word;">Terjual</p>
+                                                    <p style="margin: 0; font-weight: bold; word-wrap: break-word;"><span style="color: blue;">98 kali</span></p>
+                                                </div>
+                                                <div style="text-align: center;">
+                                                    <i class="fas fa-redo"></i>
+                                                    <p style="margin: 0; word-wrap: break-word;">Dipekerjakan ulang</p>
+                                                    <p style="margin: 0; font-weight: bold; word-wrap: break-word;"><span style="color: blue;">20 kali</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="card shadow-none border w-100 mb-7 mb-lg-0">
+                                            <div class="card-body p-4 d-flex flex-column justify-content-center">
+                                                <div class="row">
+                                                    <div class="col-lg-4 text-center mt-4">
+                                                        <div class="circle-rating" style="background-color: #e0f0ff; border-radius: 50%; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+                                                            <div>
+                                                                <h2 class="text-primary mb-0 fw-semibold fs-9">4.9</h2>
+                                                                <p class="mb-0">Dari 5</p>
+                                                            </div>
                                                         </div>
-                                                        <div class="card-body pt-3 p-4 d-flex flex-column" style="display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; padding-top: 10px; padding-bottom: 10px;">
-                                                            <h6 class="fw-semibold fs-4" style="margin-bottom: 10px;"><b>Portofolio Merdeka Belajar</b></h6>
-                                                            <div class="d-flex align-items-center justify-content-between mt-auto" style="margin-top: auto;">
-                                                                <h6 class="fw-semibold fs-3 mb-0">Profesional</h6>
+                                                    </div>
+                                                    <div class="col-lg-8">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <p>Kecepatan membalas</p>
+                                                                <ul class="list-unstyled d-flex align-items-center">
+                                                                    <?php for ($i = 0; $i < 5; $i++) : ?>
+                                                                        <li class="fs-6"><i class="fas fa-star text-warning"></i>&nbsp;</li>
+                                                                    <?php endfor; ?>
+                                                                </ul>
+                                                                <p>Ketrampilan dan keahlian</p>
+                                                                <ul class="list-unstyled d-flex align-items-center">
+                                                                    <?php for ($i = 0; $i < 5; $i++) : ?>
+                                                                        <li class="fs-6"><i class="fas fa-star text-warning"></i>&nbsp;</li>
+                                                                    <?php endfor; ?>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <p>Pelayanan</p>
+                                                                <ul class="list-unstyled d-flex align-items-center">
+                                                                    <?php for ($i = 0; $i < 5; $i++) : ?>
+                                                                        <li class="fs-6"><i class="fas fa-star text-warning"></i>&nbsp;</li>
+                                                                    <?php endfor; ?>
+                                                                </ul>
+                                                                <p>Value for money</p>
+                                                                <ul class="list-unstyled d-flex align-items-center">
+                                                                    <?php for ($i = 0; $i < 5; $i++) : ?>
+                                                                        <li class="fs-6"><i class="fas fa-star text-warning"></i>&nbsp;</li>
+                                                                    <?php endfor; ?>
+                                                                </ul>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-6 col-xl-3">
-                                                    <div class="card hover-img overflow-hidden rounded-2 h-100 d-flex flex-column" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-                                                        <div class="position-relative" style="flex-grow: 1; height: 200px;">
-                                                            <a href="javascript:void(0)"><img src="<?= base_url('assets') ?>/porto2.jpg" class="card-img-top rounded-0" alt="..." style="width: 100%; height: 100%; object-fit: cover;"></a>
-                                                        </div>
-                                                        <div class="card-body pt-3 p-4 d-flex flex-column" style="display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; padding-top: 10px; padding-bottom: 10px;">
-                                                            <h6 class="fw-semibold fs-4" style="margin-bottom: 10px;"><b>Portofolio Desain Grafis</b></h6>
-                                                            <div class="d-flex align-items-center justify-content-between mt-auto" style="margin-top: auto;">
-                                                                <h6 class="fw-semibold fs-3 mb-0">Profesional</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="alert alert-primary" role="alert">
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                    <img src="<?= base_url('assets') ?>/user.png" alt="User Image" class="img-fluid rounded-circle" style="width: 50px; height: 50px;">
                                                 </div>
-                                                <div class="col-sm-6 col-xl-3">
-                                                    <div class="card hover-img overflow-hidden rounded-2 h-100 d-flex flex-column" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-                                                        <div class="position-relative" style="flex-grow: 1; height: 200px;">
-                                                            <a href="javascript:void(0)"><img src="<?= base_url('assets') ?>/porto3.jpg" class="card-img-top rounded-0" alt="..." style="width: 100%; height: 100%; object-fit: cover;"></a>
-                                                        </div>
-                                                        <div class="card-body pt-3 p-4 d-flex flex-column" style="display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; padding-top: 10px; padding-bottom: 10px;">
-                                                            <h6 class="fw-semibold fs-4" style="margin-bottom: 10px;"><b>Tips Membuat Portofolio</b></h6>
-                                                            <div class="d-flex align-items-center justify-content-between mt-auto" style="margin-top: auto;">
-                                                                <h6 class="fw-semibold fs-3 mb-0">Online Terbaik</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <div class="col-md-11">
+                                                    <h6 class="mb-1">navatian <span style="float: right;">5.0 <i class="fas fa-star text-warning"></i></span></h6>
+                                                    <p class="text-muted mb-1">20/05/2024</p>
+                                                    <p class="mb-0">Projek kedua dan memuaskan seperti sebelumnya, highly recommended</p>
                                                 </div>
-                                                <div class="col-sm-6 col-xl-3">
-                                                    <div class="card hover-img overflow-hidden rounded-2 h-100 d-flex flex-column" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-                                                        <div class="position-relative" style="flex-grow: 1; height: 200px;">
-                                                            <a href="javascript:void(0)"><img src="<?= base_url('assets') ?>/porto3.jpg" class="card-img-top rounded-0" alt="..." style="width: 100%; height: 100%; object-fit: cover;"></a>
-                                                        </div>
-                                                        <div class="card-body pt-3 p-4 d-flex flex-column" style="display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1; padding-top: 10px; padding-bottom: 10px;">
-                                                            <h6 class="fw-semibold fs-4" style="margin-bottom: 10px;"><b>Tips Membuat Portofolio</b></h6>
-                                                            <div class="d-flex align-items-center justify-content-between mt-auto" style="margin-top: auto;">
-                                                                <h6 class="fw-semibold fs-3 mb-0">Profesional</h6>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="alert alert-primary" role="alert">
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                    <img src="<?= base_url('assets') ?>/user.png" alt="User Image" class="img-fluid rounded-circle" style="width: 50px; height: 50px;">
+                                                </div>
+                                                <div class="col-md-11">
+                                                    <h6 class="mb-1">lxegout <span style="float: right;">5.0 <i class="fas fa-star text-warning"></i></span></h6>
+                                                    <p class="text-muted mb-1">21/04/2024</p>
+                                                    <p class="mb-0">helpfull, komunikasi bagus fast respon hasil memuaskan dan akan berlangggan untuk proyek selanjutnya,</p>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -267,7 +281,9 @@
                     </div>
                 </div>
             </div>
-        <?php endforeach; ?>
     </div>
-    <div class="dark-transparent sidebartoggler"></div>
+</div>
+<?php endforeach; ?>
+</div>
+<div class="dark-transparent sidebartoggler"></div>
 </div>
