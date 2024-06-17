@@ -2,7 +2,7 @@
 <section class="hero-section hero-4 bg-cover" style="background-image: url('assets/img/section-bg.jpg');">
     <div class="container">
         <div class="row g-4 align-items-center">
-        <center>
+            <center>
                 <div class="col-lg-6">
                     <div class="hero-content">
                         <h2 class="wow fadeInUp" data-wow-delay=".3s">Tingkatkan usahamu dengan jasa <span id="text-container" class="text-primary"></span></h2>
@@ -76,11 +76,11 @@
 <!-- Service Section Start -->
 <section class="service-section-3 section-padding pt-0">
     <div class="line-shape-2">
-        <img src="assets/img/service/line-shape-2.png" alt="shape-img">
+        <img src="<?= base_url('assets') ?>/img/service/line-shape-2.png" alt="shape-img">
     </div>
     <div class="container">
         <div class="section-title text-center">
-            <span class="wow fadeInUp">Keunggulan Kami</span>
+            <span class="wow fadeInUp text-dark">Keunggulan Kami</span>
             <h2 class="wow fadeInUp" data-wow-delay=".3s">Memberikan kulaitas terbaik</h2>
         </div>
         <div class="row">
@@ -152,7 +152,7 @@
                 <div class="col-lg-6 mt-4 mt-lg-0">
                     <div class="about-content">
                         <div class="section-title">
-                            <span class="wow fadeInUp">TENTANG DOSEN UMKM</span>
+                            <span class="wow fadeInUp text-dark">TENTANG DOSEN UMKM</span>
                             <h2 class="wow fadeInUp" data-wow-delay=".3s">
                                 Siapa Dosen UMKM?
                             </h2>
@@ -172,9 +172,9 @@
     <div class="container">
         <div class="pricing-wrapper">
             <div class="section-title text-center">
-                <span class="wow fadeInUp">Layanan Populer dan Promo</span>
+                <span class="wow fadeInUp text-dark">Layanan Populer dan Promo</span>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">
-                    Kami telah menawarkan harga yang terbaik untuk Anda
+                    Harga Terbaik untuk Anda
                 </h2>
             </div>
             <div class="tab-content">
@@ -186,81 +186,73 @@
                                     <h6>Basic Plan</h6>
                                 </div>
                                 <div class="pricing-header">
-                                    <h2>$149</h2>
-                                    <span>Par month</span>
+                                    <h2><small>Rp 55,000</small></h2>
+                                    <span>Per month</span>
                                     <p>
-                                        Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et
+                                        Ideal untuk startup dan bisnis kecil yang ingin memulai.
                                     </p>
                                 </div>
                                 <ul class="pricing-list">
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Branding and design Identity
+                                        Konsultasi awal gratis
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Web site Marketing Solutions
+                                        Pembuatan website dasar
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Free 15 GB Linux Hosting
+                                        SEO dasar dan analitik
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        24/7 system Monitoring
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        unlimited Download Data
+                                        Dukungan teknis via email
                                     </li>
                                 </ul>
                                 <div class="pricing-button">
-                                    <p>Up to 10 users + 1.99 per user</p>
+                                    <p>Untuk hingga 3 proyek per bulan</p>
                                     <a href="contact.html" class="pricing-btn mt-4">
-                                        choose Plan
+                                        Pilih Paket
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                            <div class="pricing-items active">
+                            <div class="pricing-items">
                                 <div class="tag">
-                                    <h6>Most Popular</h6>
+                                    <h6>Standard Plan</h6>
                                 </div>
                                 <div class="pricing-header">
-                                    <h2>$179</h2>
-                                    <span>Par month</span>
+                                    <h2><small>Rp 150,000</small></h2>
+                                    <span>Per month</span>
                                     <p>
-                                        Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et
+                                        Untuk bisnis yang sedang berkembang dan membutuhkan lebih banyak fitur.
                                     </p>
                                 </div>
                                 <ul class="pricing-list">
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Branding and design Identity
+                                        Konsultasi strategi bulanan
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Web site Marketing Solutions
+                                        Desain website responsif
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Free 15 GB Linux Hosting
+                                        SEO lanjutan dan analitik
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        24/7 system Monitoring
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        unlimited Download Data
+                                        Dukungan teknis via telepon dan email
                                     </li>
                                 </ul>
                                 <div class="pricing-button">
-                                    <p>Up to 10 users + 1.99 per user</p>
+                                    <p>Untuk hingga 7 proyek per bulan</p>
                                     <a href="contact.html" class="pricing-btn mt-4">
-                                        choose Plan
+                                        Pilih Paket
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </a>
                                 </div>
@@ -269,174 +261,37 @@
                         <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                             <div class="pricing-items">
                                 <div class="tag">
-                                    <h6>Premium</h6>
+                                    <h6>Premium Plan</h6>
                                 </div>
                                 <div class="pricing-header">
-                                    <h2>$199</h2>
-                                    <span>Par month</span>
+                                    <h2><small>Rp 300,000</small></h2>
+                                    <span>Per month</span>
                                     <p>
-                                        Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et
+                                        Untuk bisnis besar yang memerlukan solusi komprehensif dan dukungan penuh.
                                     </p>
                                 </div>
                                 <ul class="pricing-list">
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Branding and design Identity
+                                        Konsultasi dan analisis bisnis mendalam
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Web site Marketing Solutions
+                                        Pengembangan website custom
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        Free 15 GB Linux Hosting
+                                        Integrasi sistem dan otomatisasi
                                     </li>
                                     <li>
                                         <i class="fa-solid fa-check"></i>
-                                        24/7 system Monitoring
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        unlimited Download Data
+                                        Dukungan teknis 24/7
                                     </li>
                                 </ul>
                                 <div class="pricing-button">
-                                    <p>Up to 10 users + 1.99 per user</p>
+                                    <p>Untuk proyek tanpa batas per bulan</p>
                                     <a href="contact.html" class="pricing-btn mt-4">
-                                        choose Plan
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="yearly" class="tab-pane fade" role="tabpanel">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="pricing-items">
-                                <div class="tag">
-                                    <h6>Basic Plan</h6>
-                                </div>
-                                <div class="pricing-header">
-                                    <h2>$149</h2>
-                                    <span>Par month</span>
-                                    <p>
-                                        Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et
-                                    </p>
-                                </div>
-                                <ul class="pricing-list">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Branding and design Identity
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Web site Marketing Solutions
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Free 15 GB Linux Hosting
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        24/7 system Monitoring
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        unlimited Download Data
-                                    </li>
-                                </ul>
-                                <div class="pricing-button">
-                                    <p>Up to 10 users + 1.99 per user</p>
-                                    <a href="contact.html" class="pricing-btn mt-4">
-                                        choose Plan
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="pricing-items active">
-                                <div class="tag">
-                                    <h6>Most Popular</h6>
-                                </div>
-                                <div class="pricing-header">
-                                    <h2>$179</h2>
-                                    <span>Par month</span>
-                                    <p>
-                                        Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et
-                                    </p>
-                                </div>
-                                <ul class="pricing-list">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Branding and design Identity
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Web site Marketing Solutions
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Free 15 GB Linux Hosting
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        24/7 system Monitoring
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        unlimited Download Data
-                                    </li>
-                                </ul>
-                                <div class="pricing-button">
-                                    <p>Up to 10 users + 1.99 per user</p>
-                                    <a href="contact.html" class="pricing-btn mt-4">
-                                        choose Plan
-                                        <i class="fa-solid fa-arrow-right-long"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="pricing-items">
-                                <div class="tag">
-                                    <h6>Premium</h6>
-                                </div>
-                                <div class="pricing-header">
-                                    <h2>$199</h2>
-                                    <span>Par month</span>
-                                    <p>
-                                        Lnteger sapien nec sapien sollicitudin ultrices Cras tempor id lorem et
-                                    </p>
-                                </div>
-                                <ul class="pricing-list">
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Branding and design Identity
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Web site Marketing Solutions
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        Free 15 GB Linux Hosting
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        24/7 system Monitoring
-                                    </li>
-                                    <li>
-                                        <i class="fa-solid fa-check"></i>
-                                        unlimited Download Data
-                                    </li>
-                                </ul>
-                                <div class="pricing-button">
-                                    <p>Up to 10 users + 1.99 per user</p>
-                                    <a href="contact.html" class="pricing-btn mt-4">
-                                        choose Plan
+                                        Pilih Paket
                                         <i class="fa-solid fa-arrow-right-long"></i>
                                     </a>
                                 </div>
@@ -449,15 +304,11 @@
     </div>
 </section>
 
-<!-- Achievement Section Start -->
-<section class="achievement-section-2 fix section-padding pt-0">
-</section>
-
 <!--<< Faq Section Start >>-->
 <section class="faq-section-2 fix section-padding pt-0">
     <div class="container">
         <div class="section-title text-center">
-            <span class="wow fadeInUp">Lihat Koleksi Portofolio Kami</span>
+            <span class="wow fadeInUp text-dark">Lihat Koleksi Portofolio Kami</span>
             <h2 class="wow fadeInUp" data-wow-delay=".3s">
                 Temukan Inspirasi dari Karya-karya Terbaik Kami
             </h2>
@@ -608,4 +459,3 @@
         </div>
     </div>
 </section>
-
