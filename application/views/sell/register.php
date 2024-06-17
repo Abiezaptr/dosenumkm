@@ -15,7 +15,7 @@
                                              <div class="mb-3">
                                                  <label><b>Username</b></label>
                                                  <p><small>Tidak dapat diedit (karena mempengaruhi pencarian Google untuk halaman pekerjaan Anda)</small></p>
-                                                 <input type="text" class="form-control" name="name" value="dosenumkm.id/user/wumzymiz" readonly />
+                                                 <input type="text" class="form-control" name="username" value="dosenumkm.id/user/wumzymiz" readonly />
                                              </div>
                                          </div>
                                      </div>
