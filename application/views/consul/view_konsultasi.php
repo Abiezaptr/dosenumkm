@@ -29,6 +29,9 @@
 
                                 <div id="sync2" class="owl-carousel owl-theme">
                                     <div class="item rounded overflow-hidden">
+                                        <img src="<?= base_url('assets') ?>/samplecover.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="item rounded overflow-hidden">
                                         <img src="<?= base_url('assets') ?>/sample1.jpg" alt="" class="img-fluid">
                                     </div>
                                     <div class="item rounded overflow-hidden">
@@ -48,7 +51,7 @@
                                                 <p class="mb-9">
                                                     Layanan konsultasi dengan aman melalui <b>Dosen UMKM</b>. Tim support siap membantu untuk menindaklanjuti pekerjaan dan memberikan jaminan uang kembali
                                                 </p>
-                                                <p><a href="">Baca syarat dan ketentuan</a></p>
+                                                <p><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Lihat Jaminan Pekerjaan</a></p>
                                             </div>
                                             <div class="col-sm-5">
                                                 <div class="position-relative mb-n7 text-end">
@@ -58,7 +61,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-12">
+                                <!-- <div class="col-lg-12">
                                     <div class="shop-content">
                                         <div class="card">
                                             <div class="card-body">
@@ -78,6 +81,156 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div> -->
+
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header d-flex align-items-center bg-primary text-white">
+                                                <h4 class="modal-title text-white" id="staticBackdropLabel">
+                                                    Jaminan Dosenumkm
+                                                </h4>
+                                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <br><br>
+                                                <div class="text-center mb-4">
+                                                    <h4 class="fw-bold">Mendapatkan perlindungan di setiap langkah</h4>
+                                                    <p class="text-muted">
+                                                        Mempekerjakan freelancer melalui platform Fastwork akan mendapatkan perlindungan di setiap langkah seluruh proses dari awal hingga akhir untuk menjamin kualitas kerja yang berkualitas.
+                                                    </p>
+                                                </div>
+                                                <br><br>
+                                                <div class="row text-center">
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="icon-box bg-light p-4 rounded-circle mx-auto mb-3">
+                                                            <i class="fas fa-user-check fa-2x text-primary"></i>
+                                                        </div>
+                                                        <h5 class="fw-bold">Konsultan terverifikasi</h5>
+                                                        <p class="text-muted">KTP, informasi kontak dan portfolio yang terverifikasi</p>
+                                                    </div>
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="icon-box bg-light p-4 rounded-circle mx-auto mb-3">
+                                                            <i class="fas fa-money-bill-wave fa-2x text-primary"></i>
+                                                        </div>
+                                                        <h5 class="fw-bold">Jaminan uang kembali</h5>
+                                                        <p class="text-muted">Jaminan uang kembali bila tidak mendapatkan hasil kerja.</p>
+                                                    </div>
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="icon-box bg-light p-4 rounded-circle mx-auto mb-3">
+                                                            <i class="fas fa-headset fa-2x text-primary"></i>
+                                                        </div>
+                                                        <h5 class="fw-bold">Tim support siap melayani</h5>
+                                                        <p class="text-muted">Tim support kami siap melayani customer dan konsultan.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <style>
+                                    .icon-box {
+                                        width: 80px;
+                                        height: 80px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+                                </style>
+
+                                <div class="col-md-12">
+                                    <div class="card">
+                                        <div class="card-body">
+
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-pills nav-fill" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" data-bs-toggle="tab" href="#navpill-111" role="tab">
+                                                        <span><b>Rp499,0 rb</b></span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#navpill-222" role="tab">
+                                                        <span><b>Rp799,0 rb</b></span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#navpill-333" role="tab">
+                                                        <span><b>Rp999,0 rb</b></span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content border mt-2">
+                                                <div class="tab-pane active p-3" id="navpill-111" role="tabpanel">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <p><b>Paket : LP Basic</b></p>
+                                                            <ol>
+                                                                <li>Desain Landingpage Premium (Disediakan/Desain Standar)</li>
+                                                                <li>SEO On Page</li>
+                                                                <li>Security SSL (https)</li>
+                                                                <li>Integrasi FB Pixel (optional)</li>
+                                                                <li>Gratis konsultasi after sales via WhatsApp</li>
+                                                                <li>Gratis optimasi speed website</li>
+                                                                <li>Bisa revisi konten</li>
+                                                            </ol>
+                                                            <hr style="border-top: 1px dashed blue;">
+                                                            <a href="<?= site_url('konsultasi/chat') ?>" class="btn btn-primary text-white w-100 mt-3"><i class="ti ti-brand-hipchat fs-4"></i>&nbsp; Chat and Nego </a>
+                                                            <p class="text-center text-muted mt-2"><small>Anda belum akan dikenakan biaya</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane p-3" id="navpill-222" role="tabpanel">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <p><b>Paket : LP Standar</b></p>
+                                                            <ol>
+                                                                <li>Desain Landingpage Premium (Disediakan/Desain Standar)</li>
+                                                                <li>SEO On Page</li>
+                                                                <li>Security SSL (https)</li>
+                                                                <li>Integrasi FB Pixel (optional)</li>
+                                                                <li>Gratis konsultasi after sales via WhatsApp</li>
+                                                                <li>Gratis optimasi speed website</li>
+                                                                <li>Bisa revisi konten</li>
+                                                                <li>Free domain 1 tahun</li>
+                                                            </ol>
+                                                            <hr style="border-top: 1px dashed blue;">
+                                                            <a href="<?= site_url('konsultasi/chat') ?>" class="btn btn-primary text-white w-100 mt-3"><i class="ti ti-brand-hipchat fs-4"></i>&nbsp; Chat and Nego </a>
+                                                            <p class="text-center text-muted mt-2"><small>Anda belum akan dikenakan biaya</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane p-3" id="navpill-333" role="tabpanel">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <p><b>Paket : LP Premium</b></p>
+                                                            <ol>
+                                                                <li>Desain Landingpage Premium (Disediakan/Desain Standar)</li>
+                                                                <li>SEO On Page</li>
+                                                                <li>Security SSL (https)</li>
+                                                                <li>Integrasi FB Pixel (optional)</li>
+                                                                <li>Gratis konsultasi after sales via WhatsApp</li>
+                                                                <li>Gratis optimasi speed website</li>
+                                                                <li>Bisa revisi konten</li>
+                                                                <li>Free domain 1 tahun</li>
+                                                                <li>Dibantu desain gambar</li>
+                                                            </ol>
+                                                            <hr style="border-top: 1px dashed blue;">
+                                                            <a href="<?= site_url('konsultasi/chat') ?>" class="btn btn-primary text-white w-100 mt-3"><i class="ti ti-brand-hipchat fs-4"></i>&nbsp; Chat and Nego </a>
+                                                            <p class="text-center text-muted mt-2"><small>Anda belum akan dikenakan biaya</small></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
@@ -92,11 +245,6 @@
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link position-relative rounded-0 d-flex align-items-center justify-content-center bg-transparent fs-3 py-6" id="pills-paket-tab" data-bs-toggle="pill" data-bs-target="#pills-paket" type="button" role="tab" aria-controls="pills-paket" aria-selected="false">
-                                    <b>Paket</b>
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
                                 <button class="nav-link position-relative rounded-0 d-flex align-items-center justify-content-center bg-transparent fs-3 py-6" id="pills-ulasan-tab" data-bs-toggle="pill" data-bs-target="#pills-ulasan" type="button" role="tab" aria-controls="pills-ulasan" aria-selected="false">
                                     <b>Ulasan</b>
                                 </button>
@@ -105,7 +253,7 @@
                         <div class="tab-content pt-4" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-description" role="tabpanel" aria-labelledby="pills-description-tab" tabindex="0">
                                 <div class="row">
-                                    <div class="col-lg-4 d-flex align-items-stretch">
+                                    <!-- <div class="col-lg-4 d-flex align-items-stretch">
                                         <div class="card shadow-none border w-100 mb-7 mb-lg-0">
                                             <div class="card-body text-center p-4 d-flex flex-column justify-content-center">
                                                 <h6 class="mb-3">Ulasan dari pembeli (1)</h6>
@@ -122,41 +270,12 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-lg-8 d-flex align-items-stretch">
+                                    </div> -->
+                                    <div class="col-lg-12 d-flex align-items-stretch">
                                         <div class="card shadow-none border w-100 mb-7 mb-lg-0">
                                             <div class="card-body p-4 d-flex flex-column justify-content-center">
                                                 <h5 class="mb-3 text-primary"><b><?= $detail['title'] ?> - <?= $detail['detail_title'] ?></b></h5>
                                                 <p class="mt-3"> <?= $detail['description'] ?></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="pills-paket" role="tabpanel" aria-labelledby="pills-paket-tab" tabindex="0">
-                                <div class="row">
-                                    <div class="tab-content border mt-2">
-                                        <div class="tab-pane active p-3" id="navpill-111" role="tabpanel">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <p>
-                                                        <b class="text-primary">Maintenance dan Penambahan Fitur</b> <span class="text-primary fw-semibold" style="float: right;">Rp 200.000</span>
-                                                        <br><i class="ti ti-calendar-time"></i>&nbsp; <span>Durasi pengerjaan 2 hari</span>
-                                                    </p>
-                                                    <p class="text-dark">
-                                                        - Desain Landingpage Premium (Disediakan/Desain Standar)<br>
-                                                        - SEO On Page<br>
-                                                        - Security SSL (https)<br>
-                                                        - Integrasi FB Pixel (optional)<br>
-                                                        - Gratis konsultasi after sales via WhatsApp<br>
-                                                        - Gratis optimasi speed website<br>
-                                                        - Bisa revisi konten<br>
-                                                        <br>
-                                                        * Belum Termasuk Domain & Hosting
-                                                    </p>
-                                                    <hr>
-                                                    <a href="<?= site_url('message') ?>" class="btn btn-primary text-white mt-3" style="float: right;">Chat and Nego </a>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -169,11 +288,11 @@
                                             <p class="ml-3 text-dark"><b>Detail Profile Konsultan</b></p>
                                             <hr>
                                             <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
-                                                <img src="<?= base_url('assets') ?>/user.png" alt="Profile Image" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 20px;">
+                                                <img src="<?= base_url('assets') ?>/cta.png" alt="Profile Image" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 20px;">
                                                 <div style="flex-grow: 1; min-width: 0;">
-                                                    <h5 style="margin: 0;" class="mb-2"><b>aripid</b></h5>
+                                                    <h5 style="margin: 0;" class="mb-2"><b>John Doe</b></h5>
                                                     <p style="word-wrap: break-word; white-space: normal;">
-                                                        Halo nama saya Arip. Saya seorang web development / web designer, yang ditawarkan untuk tujuan pemasaran. Saya telah membuat beberapa jenis website maupun toko online. saya dapat menyelesaikan pekerjaan terpanjang dalam satu minggu. website yang sering saya desain kebanyakan CMS Wordpress.
+                                                        Halo nama saya John Doe. Saya seorang web development / web designer, yang ditawarkan untuk tujuan pemasaran. Saya telah membuat beberapa jenis website maupun toko online. saya dapat menyelesaikan pekerjaan terpanjang dalam satu minggu. website yang sering saya desain kebanyakan CMS Wordpress.
                                                     </p>
                                                 </div>
                                                 <div style="flex-shrink: 0; margin-left: 20px;">
@@ -181,6 +300,7 @@
                                                 </div>
                                             </div>
                                             <hr>
+                                            <br>
                                             <div style="display: flex; justify-content: space-around; margin-bottom: 20px;">
                                                 <div style="text-align: center;">
                                                     <i class="fas fa-handshake"></i>
@@ -188,8 +308,8 @@
                                                     <p style="margin: 0; font-weight: bold; word-wrap: break-word;"><span style="color: blue;">100%</span></p>
                                                 </div>
                                                 <div style="text-align: center;">
-                                                    <i class="fas fa-shopping-cart"></i>
-                                                    <p style="margin: 0; word-wrap: break-word;">Terjual</p>
+                                                    <i class="fas fa-comment-dots"></i>
+                                                    <p style="margin: 0; word-wrap: break-word;">Dihubungi</p>
                                                     <p style="margin: 0; font-weight: bold; word-wrap: break-word;"><span style="color: blue;">98 kali</span></p>
                                                 </div>
                                                 <div style="text-align: center;">
