@@ -20,12 +20,21 @@ class Konsultasi_model extends CI_Model
     }
 
     public function getConsultationDetail($service_id) {
-        $this->db->select('services.*, detail_services.title as detail_title, detail_services.price as detail_price, detail_services.status as detail_status, detail_services.type_id, detail_services.specialist_id, detail_services.image as detail_image, jasa_type.name as type_name, specialist_type.name as specialist_name');
+        $this->db->select('services.*, detail_services.id as service_id, detail_services.title as detail_title, detail_services.price as detail_price, detail_services.status as detail_status, detail_services.type_id, detail_services.specialist_id, detail_services.image as detail_image, jasa_type.name as type_name, specialist_type.name as specialist_name');
         $this->db->from('services');
         $this->db->join('detail_services', 'detail_services.services_id = services.id');
         $this->db->join('jasa_type', 'jasa_type.id = detail_services.type_id');
         $this->db->join('specialist_type', 'specialist_type.id = detail_services.specialist_id');
         $this->db->where('services.id', $service_id);
+        $query = $this->db->get();
+        return $query->result_array(); 
+    }
+
+    public function getConsultationDetailView($service_id) {
+        $this->db->select('services.*, detail_services.id as service_id, detail_services.title as detail_title, detail_services.price as detail_price, detail_services.status as detail_status, detail_services.type_id, detail_services.specialist_id, detail_services.image as detail_image');
+        $this->db->from('detail_services');
+        $this->db->join('services', 'detail_services.services_id = services.id');
+        $this->db->where('detail_services.id', $service_id);
         $query = $this->db->get();
         return $query->result_array(); 
     }

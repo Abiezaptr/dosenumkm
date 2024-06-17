@@ -24,7 +24,7 @@
                                 <div class="service-content" style="flex: 1 0 auto; display: flex; flex-direction: column; justify-content: space-between;">
                                     <div>
                                         <h4>
-                                            <a href="<?= site_url('konsultasi/detail') ?>"><?= $item['title'] ?></a>
+                                            <a href="<?= site_url('konsultasi/detail/' . $item['id_service']) ?>"><?= $item['title'] ?></a>
                                         </h4>
                                         <p style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">
                                             <?= $item['description'] ?>

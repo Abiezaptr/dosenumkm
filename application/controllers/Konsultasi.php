@@ -27,7 +27,7 @@ class Konsultasi extends CI_Controller
 
     public function view($service_id)
     {
-        $data['service_details'] = $this->Konsultasi_model->getConsultationDetail($service_id);
+        $data['service_details'] = $this->Konsultasi_model->getConsultationDetailView($service_id);
 
         $this->load->view('partials/other/header');
         $this->load->view('consul/view_konsultasi', $data); 
