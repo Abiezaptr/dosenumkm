@@ -151,44 +151,21 @@
                                                     ?>&nbsp;<?= $detail['rating'] ?>
                                                 </span>
                                             </h5>
-                                            <p class="mb-7">
-                                            <?= $detail['description'] ?>
-                                            </p>
                                             <p class="mb-0">
-                                                Semua pengerjaan dilakukan dari awal dapat di konsultasikan terlebih dahulu hingga deal. Sistem atau aplikasi yang ingin dibuat seperti apa sehingga harga dapat menyesuaikan sistem yang ingin dibangun semakin Cepat dan sederhana maka tentunya harga semakin Terjangkau, semua pengerjaan Bergaransi jika ada error/bug dapat dilakukan Revisi perbaikan, Bonus untuk anda mendapatkan bantuan/Support seperti upload hosting/setup VPS semua belum termasuk dalam tiap pesanan.
+                                                <?= $detail['description'] ?>
                                             </p>
                                         </div>
                                         <div class="tab-pane fade" id="pills-paket" role="tabpanel" aria-labelledby="pills-paket-tab" tabindex="0">
                                             <div class="row">
-                                                <h5 class="fs-5 mt-4 mb-7 text-primary">
-                                                    <b>Harga paket untuk Jasa Pembuatan Aplikasi Web - Sistem Informasi Sederhana dan Advanced</b>
-                                                </h5>
-
                                                 <div class="tab-content border mt-2">
                                                     <div class="tab-pane active p-3" id="navpill-111" role="tabpanel">
                                                         <div class="row">
                                                             <div class="col-md-12">
                                                                 <p>
-                                                                    <b class="text-primary text-uppercase">Maintenance dan Penambahan Fitur</b> <span class="text-primary fw-semibold" style="float: right;">Rp 200.000</span>
-                                                                    <br><i class="ti ti-calendar-time"></i>&nbsp; <span class="fs-3"><small>Durasi pengerjaan 2 hari</small></span>
+                                                                    <b class="text-primary text-uppercase"> <?= $detail['detail_title'] ?></b> <span class="text-primary fw-semibold" style="float: right;">Rp <?= number_format($detail['detail_price']) ?></span>
+                                                                    <br><i class="ti ti-calendar-time"></i>&nbsp; <span class="fs-3"><small><b>Durasi pengerjaan</b> : S&K dengan pihak jasa berlaku.</small></span>
                                                                 </p>
-                                                                <p>Mulai dari Rp. 200.000 - Menerima perbaikan error atau bug pada sistem</p>
-                                                                <hr>
-                                                                <a href="<?= site_url('message') ?>" class="btn btn-primary text-white mt-3" style="float: right;"><i class="ti ti-brand-hipchat fs-4"></i>&nbsp; Chat and Nego </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="tab-content border mt-4">
-                                                    <div class="tab-pane active p-3" id="navpill-111" role="tabpanel">
-                                                        <div class="row">
-                                                            <div class="col-md-12">
-                                                                <p>
-                                                                    <b class="text-primary text-uppercase">Pembuatan web sederhana</b> <span class="text-primary fw-semibold" style="float: right;">Rp 200.000</span>
-                                                                    <br><i class="ti ti-calendar-time"></i>&nbsp; <span class="fs-3"><small>Durasi pengerjaan 7 hari</small></span>
-                                                                </p>
-                                                                <p>Mulai dari Rp. 200.000 - Menerima perbaikan error atau bug pada sistem</p>
+                                                                <p>Mulai dari Rp. <?= number_format($detail['detail_price']) ?> - <?= $detail['description'] ?></p>
                                                                 <hr>
                                                                 <a href="<?= site_url('message') ?>" class="btn btn-primary text-white mt-3" style="float: right;"><i class="ti ti-brand-hipchat fs-4"></i>&nbsp; Chat and Nego </a>
                                                             </div>
