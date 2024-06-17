@@ -4,224 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fastwork</title>
+    <title>Popup Pendaftaran</title>
 </head>
 
 <style>
     body {
         font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* Prevent scrolling when popup is open */
     }
 
-    .modal {
-        display: block;
+    .popup {
+        display: flex;
         position: fixed;
         z-index: 1;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+        left: 0;
+        top: 0;
         width: 100%;
-        max-width: 600px;
-        height: auto;
+        height: 100%;
         overflow: auto;
         background-color: rgba(0, 0, 0, 0.4);
+        justify-content: center;
+        align-items: center;
     }
 
-    .modal-content {
+    .popup-content {
         background-color: #fefefe;
         padding: 20px;
         border: 1px solid #888;
+        width: 80%;
+        max-width: 500px;
+        border-radius: 10px;
         text-align: center;
     }
 
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .options {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        margin: 20px 0;
-    }
-
-    .option {
+    .popup-body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100px;
-        padding: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s;
     }
 
-    .option:hover {
-        background-color: #f0f0f0;
+    .popup-section {
+        margin-bottom: 20px;
     }
 
-    .option img {
-        width: 40px;
-        height: 40px;
+    .popup-section img {
+        max-width: 100%;
+        height: auto;
         margin-bottom: 10px;
     }
 
-    .buttons {
-        display: flex;
-        justify-content: center;
-        /* Center the buttons */
-        margin-top: 20px;
-        gap: 10px;
-        /* Add some space between buttons */
-    }
-
     button {
+        background-color: #007bff;
+        color: white;
         padding: 10px 20px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
     }
 
-    #skip {
-        background-color: #f0f0f0;
-    }
-
-    #save {
-        background-color: #007bff;
-        color: white;
-    }
-
-    #confirmModal {
-        display: none;
-        position: fixed;
-        z-index: 2;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    .confirm-modal-content {
-        background-color: #fefefe;
-        padding: 20px;
-        border: 1px solid #888;
-        text-align: center;
-    }
-
-    .confirm-buttons {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        gap: 10px;
-    }
-
-    #exit {
-        background-color: #f0f0f0;
-    }
-
-    #cancel {
-        background-color: #007bff;
-        color: white;
+    button:hover {
+        background-color: #0056b3;
     }
 </style>
 
 <body>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Sebelum memulai, beri tahu kami dari mana Anda mengetahui informasi tentang kami? 😊</h2>
-            <p>Anda dapat memilih beberapa opsi</p>
-            <div class="options">
-                <div class="option"><img src="<?= base_url('assets') ?>/google.svg" alt="Google">
-                    <p>Google</p>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="popup-body">
+                <div class="popup-section">
+                    <img src="<?= base_url('assets') ?>/image-to-inform.jpg" alt="Foto buku tabungan">
                 </div>
-                <div class="option"><img src="<?= base_url('assets') ?>/IG.svg" alt="Instagram">
-                    <p>Instagram</p>
-                </div>
-                <div class="option"><img src="<?= base_url('assets') ?>/tiktok.svg" alt="TikTok">
-                    <p>TikTok</p>
-                </div>
-                <div class="option"><img src="<?= base_url('assets') ?>/facebook.svg" alt="Facebook">
-                    <p>Facebook</p>
-                </div>
-                <div class="option"><img src="<?= base_url('assets') ?>/x.svg" alt="X (Twitter)">
-                    <p>X (Twitter)</p>
-                </div>
-                <div class="option"><img src="<?= base_url('assets') ?>/youtube.svg" alt="Youtube">
-                    <p>Youtube</p>
-                </div>
-            </div>
-            <div class="buttons">
-                <button id="skip">Lewati</button>
-                <button id="save">Save and continue</button>
+                <p>Siapkan informasi Anda sebelum memulai proses pendaftaran.</p>
+                <p>Untuk pendaftaran yang cepat dan nyaman. Catatan: Sistem fastwork tidak mendukung penarikan uang melalui e-wallet.</p>
+                <button id="start-registration">Terima dan mulai pendaftaran</button>
             </div>
         </div>
     </div>
-
-    <div id="confirmModal" class="modal">
-        <div class="confirm-modal-content">
-            <span class="close-confirm"></span>
-            <h2>Apakah Anda ingin keluar dari aplikasi?</h2>
-            <p>Anda belum menyimpan data Anda. Tekan simpan, sehingga Anda dapat kembali dan mengajukan permohonan lagi.</p>
-            <div class="confirm-buttons">
-                <button id="exit">Keluar</button>
-                <button id="cancel">Batal</button>
-            </div>
-        </div>
-    </div>
-
     <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            var modal = document.getElementById("modal");
-            var confirmModal = document.getElementById("confirmModal");
-            var span = document.getElementsByClassName("close")[0];
-            var spanConfirm = document.getElementsByClassName("close-confirm")[0];
+        document.addEventListener('DOMContentLoaded', function() {
+            var popup = document.getElementById('popup');
+            var startBtn = document.getElementById('start-registration');
 
-            span.onclick = function() {
-                confirmModal.style.display = "block";
-            }
+            // Show the popup when the page loads
+            popup.style.display = 'flex';
 
-            spanConfirm.onclick = function() {
-                confirmModal.style.display = "none";
-            }
-
-            window.onclick = function(event) {
-                if (event.target == confirmModal) {
-                    confirmModal.style.display = "none";
-                }
-            }
-
-            document.getElementById("skip").onclick = function() {
-                modal.style.display = "none";
-            }
-
-            document.getElementById("save").onclick = function() {
-                alert("Data saved!");
-                alert("Data saved!");
-                modal.style.display = "none";
-            }
-
-            document.getElementById("exit").onclick = function() {
-                window.location.href = "<?= site_url('selling') ?>";
-            }
-
-            document.getElementById("cancel").onclick = function() {
-                confirmModal.style.display = "none";
+            // Redirect to the registration page when the start button is clicked
+            startBtn.onclick = function() {
+                window.location.href = '<?= site_url('selling/register') ?>';
             }
         });
     </script>

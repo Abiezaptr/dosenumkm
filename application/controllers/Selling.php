@@ -22,4 +22,11 @@ class Selling extends CI_Controller
     {
         $this->load->view('sell/apply');
     }
+
+    public function register()
+    {
+        $this->load->view('partials/other/header');
+        $this->load->view('sell/register');
+        $this->load->view('partials/other/footer');
+    }
 }
