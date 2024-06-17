@@ -156,7 +156,7 @@
                                         <div class="col-lg-8 d-flex align-items-stretch">
                                             <div class="card shadow-none border w-100 mb-7 mb-lg-0">
                                                 <div class="card-body p-4 d-flex flex-column justify-content-center">
-                                                    <h6 class="mb-3"><b><?= $detail['title'] ?> - <?= $detail['detail_title'] ?></b></h6>
+                                                    <h5 class="mb-3 text-primary"><b><?= $detail['title'] ?> - <?= $detail['detail_title'] ?></b></h5>
                                                     <p class="mt-3"> <?= $detail['description'] ?></p>
                                                 </div>
                                             </div>
