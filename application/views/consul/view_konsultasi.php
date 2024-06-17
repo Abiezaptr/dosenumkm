@@ -287,15 +287,6 @@
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-portofolio" role="tabpanel" aria-labelledby="pills-portofolio-tab" tabindex="0">
-                                <!-- <div class="row">
-                                            <div class="col-lg-12 d-flex align-items-stretch">
-                                                <div class="text-center w-100">
-                                                    <img src="<?= base_url('assets') ?>/nodata.avif" width="250" alt="No Data" class="img-fluid mb-3">
-                                                    <p class="text-muted">Tidak ada portofolio pada konsultasi ini.</p>
-                                                </div>
-                                            </div>
-                                        </div> -->
-
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <h4>Bootcamp Sample</h4>
