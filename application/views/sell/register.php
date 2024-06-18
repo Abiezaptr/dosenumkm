@@ -6,7 +6,7 @@
                      <div class="card">
                          <div class="card-body wizard-content">
                              <h6 class="card-subtitle mb-3"></h6>
-                             <form action="" class="tab-wizard wizard-circle">
+                             <form action="<?= site_url('selling/register') ?>" method="post" enctype="multipart/form-data" class="tab-wizard wizard-circle">
                                  <!-- Step 1 -->
                                  <h6><b>Profil konsultan</b> <br><small>Berikan informasi dasar untuk membangun kredibilitas Anda</small></h6>
                                  <section>
@@ -15,6 +15,7 @@
                                              <div class="mb-3">
                                                  <label><b>Username</b></label>
                                                  <p><small>Tidak dapat diedit (karena mempengaruhi pencarian Google untuk halaman pekerjaan Anda)</small></p>
+                                                 <input type="hidden" class="form-control" name="consultan_id" value="<?= 'CS' . strtoupper(substr(md5(uniqid(mt_rand(), true)), 0, 6)) . sprintf('%05d', mt_rand(0, 99999)) ?>" readonly />
                                                  <input type="text" class="form-control" name="username" value="dosenumkm.id/user/wumzymiz" readonly />
                                              </div>
                                          </div>
@@ -24,7 +25,7 @@
                                              <div class="mb-3">
                                                  <label><b>Nama yang digunakan untuk ditampilkan di sistem</b></label>
                                                  <p><small>Nama tersebut harus terdengar formal untuk membangun kredibilitas Anda</small></p>
-                                                 <input type="text" class="form-control" name="name" value="wumzymiz" />
+                                                 <input type="text" class="form-control" name="name" value="wumzymiz" required />
                                              </div>
                                          </div>
                                      </div>
@@ -34,10 +35,10 @@
                                                  <label><b>Tipe konsultan (Tidak ditampilkan di sistem)</b></label>
                                                  <p><small>Pilih yang sesuai dengan kenyamanan Anda. Jika Anda masih pelajar, pilih part-time.</small></p>
                                                  <div class="btn-group" role="group" aria-label="Consultant Type">
-                                                     <input type="radio" class="btn-check" name="type" id="partTime" autocomplete="off" value="part-time">
+                                                     <input type="radio" class="btn-check" name="type" id="partTime" autocomplete="off" value="part-time" required>
                                                      <label class="btn btn-outline-primary" for="partTime">Part-time</label>
 
-                                                     <input type="radio" class="btn-check" name="type" id="fullTime" autocomplete="off" value="full-time">
+                                                     <input type="radio" class="btn-check" name="type" id="fullTime" autocomplete="off" value="full-time" required>
                                                      <label class="btn btn-outline-primary" for="fullTime">Full-time</label>
                                                  </div>
                                              </div>
@@ -66,7 +67,7 @@
                                                      <h5 class="card-title">foto selfie dengan KTP</h5>
                                                      <img id="selfieWithKTPImage" src="<?= base_url('assets') ?>/image-with-card-id.jpg" class="img-fluid" alt="Selfie with KTP">
                                                      <input type="file" id="selfieWithKTPInput" name="selfie_file" style="display: none;" onchange="updateImage('selfieWithKTPInput', 'selfieWithKTPImage')">
-                                                     <button class="btn btn-rounded btn-outline-primary mt-3 w-100" onclick="document.getElementById('selfieWithKTPInput').click();">upload foto</button>
+                                                     <button type="button" class="btn btn-rounded btn-outline-primary mt-3 w-100" onclick="document.getElementById('selfieWithKTPInput').click();">upload foto</button>
                                                  </div>
                                              </div>
                                          </div>
@@ -76,7 +77,7 @@
                                                      <h5 class="card-title">foto KTP</h5>
                                                      <img id="ktpImage" src="<?= base_url('assets') ?>/image-card-id.jpg" class="img-fluid" alt="KTP">
                                                      <input type="file" id="ktpInput" name="ktp_file" style="display: none;" onchange="updateImage('ktpInput', 'ktpImage')">
-                                                     <button class="btn btn-rounded btn-outline-primary mt-3 w-100" onclick="document.getElementById('ktpInput').click();">upload foto</button>
+                                                     <button type="button" class="btn btn-rounded btn-outline-primary mt-3 w-100" onclick="document.getElementById('ktpInput').click();">upload foto</button>
                                                  </div>
                                              </div>
                                          </div>

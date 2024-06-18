@@ -29,7 +29,7 @@ class Selling extends CI_Controller
         if ($this->input->server('REQUEST_METHOD') === 'POST') {
             // Get data from POST request
             $data = array(
-                'consultant_id' => $this->input->post('consultant_id'),
+                'consultan_id' => $this->input->post('consultan_id'),
                 'username' => $this->input->post('username'),
                 'name' => $this->input->post('name'),
                 'type' => $this->input->post('type'),
@@ -42,13 +42,14 @@ class Selling extends CI_Controller
                 'alamat' => $this->input->post('alamat')
             );
 
-            // Check if no_ktp already exists
+            // Check if no_ktp or username already exists
             $this->db->where('no_ktp', $data['no_ktp']);
+            $this->db->or_where('username', $data['username']);
             $query = $this->db->get('consultant');
 
             if ($query->num_rows() > 0) {
-                // no_ktp already exists, show an error message
-                $this->session->set_flashdata('error', 'Nomor KTP sudah terdaftar.');
+                // no_ktp or username already exists, show an error message
+                $this->session->set_flashdata('error', 'Nomor KTP atau Username sudah terdaftar.');
                 redirect('selling/register');
             } else {
                 // Handle file uploads
@@ -77,7 +78,14 @@ class Selling extends CI_Controller
                 // Insert data into the consultant table
                 $this->db->insert('consultant', $data);
 
+                // Simpan consultan_id ke session sebelum redirect
+                $this->session->set_userdata(
+                    'consultan_id',
+                    $data['consultan_id']
+                );
+
                 // Redirect or load a view after successful registration
+                $this->session->set_flashdata('success', 'Data anda segera kami proses');
                 redirect('selling/success');
             }
         } else {
@@ -89,8 +97,26 @@ class Selling extends CI_Controller
 
     public function success()
     {
-        $this->load->view('partials/other/header');
-        $this->load->view('sell/success');
+        // Ambil consultan_id dari session
+        $consultan_id = $this->session->userdata('consultan_id');
+
+        if ($consultan_id) {
+            // Query database untuk mendapatkan data lengkap
+            $this->db->where('consultan_id', $consultan_id);
+            $query = $this->db->get('consultant');
+            $data['consultant'] = $query->row_array(); // mengambil data sebagai array
+
+            // Hapus consultan_id dari session jika sudah tidak diperlukan lagi
+            // $this->session->unset_userdata('consultan_id');
+        } else {
+            // Data tidak ditemukan, kirim pengguna ke halaman lain atau tampilkan pesan error
+            $data['consultant'] = null;
+            $this->session->set_flashdata('error', 'Anda sudah melakukan pendaftaran');
+            redirect('selling/register'); // atau halaman yang sesuai
+        }
+
+        $this->load->view('partials/other/header', $data);
+        $this->load->view('sell/success', $data);
         $this->load->view('partials/other/footer');
     }
 }
