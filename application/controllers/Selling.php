@@ -39,7 +39,8 @@ class Selling extends CI_Controller
                 'nama_belakang' => $this->input->post('nama_belakang'),
                 'no_ktp' => $this->input->post('no_ktp'),
                 'domisili' => $this->input->post('domisili'),
-                'alamat' => $this->input->post('alamat')
+                'alamat' => $this->input->post('alamat'),
+                'status' => 'pending'
             );
 
             // Check if no_ktp or username already exists
@@ -85,7 +86,7 @@ class Selling extends CI_Controller
                 );
 
                 // Redirect or load a view after successful registration
-                $this->session->set_flashdata('success', 'Data anda segera kami proses');
+                $this->session->set_flashdata('success', 'Pendfataran anda berhasil dilakukan');
                 redirect('selling/success');
             }
         } else {
@@ -118,5 +119,12 @@ class Selling extends CI_Controller
         $this->load->view('partials/other/header', $data);
         $this->load->view('sell/success', $data);
         $this->load->view('partials/other/footer');
+    }
+
+    public function webhook()
+    {
+        $this->session->set_flashdata('success', 'Terimakasih, pendaftaran anda akan segera kami proses');
+
+        redirect('home');
     }
 }
